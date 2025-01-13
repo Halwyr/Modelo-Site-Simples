@@ -149,9 +149,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    width: 140%;
+    width: 100%;
     position: relative;
     gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .dashboard__perfil {
@@ -195,7 +197,7 @@ footer {
 }
 
 /* Media Queries para dispositivos móveis */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     .body {
         padding: 1rem;
     }
@@ -238,9 +240,15 @@ footer {
         justify-content: space-between;
         gap: 1rem;
     }
+
+    .dashboard__perfil, .dashboard__car {
+
+        width: 35px;
+        height: 35px;
+    }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
     .dashboard__items {
         grid-template-columns: 1fr;
     }
@@ -256,5 +264,17 @@ footer {
 
     footer {
         font-size: 0.8rem;
+    }
+
+    .container-icons {
+
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .dashboard__perfil, .dashboard__car {
+
+        width: 30px;
+        height: 30px;
     }
 }
