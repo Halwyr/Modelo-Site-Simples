@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de Senha</title>
+    <link rel="icon" href="/img/UNIVERSE.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/recover.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/img/UNIVERSE.svg" class="dashboard__logo">
+        <h2>Recuperação de Senha</h2>
+        <button id="openModal">Recuperar Senha</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Insira seu Email</h3>
+            <form id="resetForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="js/apps.js"></script>
+</body>
+</html>

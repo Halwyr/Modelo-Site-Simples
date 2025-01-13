@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe Games</title>
+    <link rel="icon" href="/img/UNIVERSE.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="body">
+    <main class="container main">
+        <section class="divisor">
+            <div class="divisor__line"></div>
+            <img src="img/fade_bar.svg" alt="Visual bar" class="divisor__bar">
+            <div class="divisor__line"></div>
+        </section>
+        <a href="/logo.html">
+        <img src="/img/UNIVERSE.svg" class="dashboard__logo">
+    </a>
+        <div class="container-icons">
+            <a href="/perfil.html">
+                <img class="dashboard__perfil" alt="Imagem do Perfil" src="img/perfil.png">
+            </a>
+            <a href="/carrinho.html">
+            <img class="dashboard__car" id="cart-icon" alt="Carrinho de Compras" src="img/carrinho.png">
+        </a>
+            <span id="cart-count">0</span>
+        </div>
+        <section class="dashboard">
+            <ul class="dashboard__items">
+                <li class="dashboard__items__item" id="game-1">
+                    <div class="dashboard__item__img">
+                        <img src="img/God of War.png" alt="Capa jogo God of War Ragnarok">
+                    </div>
+                    <div class="dashboard__item__content">
+                    <p class="dashboard__item__name">God of War Ragnarok</p>
+                    <p class="dashboard__item__price">R$ 159,99</p>
+                    <a onclick="alterarStatus(1)" class="dashboard__item__button">Comprar</a>
+                </div>
+                </li>
+                <li class="dashboard__items__item" id="game-2">
+                    <div class="dashboard__item__img">
+                        <img src="img/Sons of the Forest.png" alt="Capa jogo Sons of the Forest">
+                    </div>
+                    <div class="dashboard__item__content">
+                    <p class="dashboard__item__name">Sons of the Forest</p>
+                    <p class="dashboard__item__price">R$ 60,00</p>
+                    <a onclick="alterarStatus(2)" class="dashboard__item__button">Comprar</a>
+                </div>
+                </li>
+                <li class="dashboard__items__item" id="game-3">
+                    <div class="dashboard__item__img">
+                        <img src="img/FC 25.png" alt="Capa jogo FC 25">
+                    </div>
+                    <div class="dashboard__item__content">
+                    <p class="dashboard__item__name">EA FC 25</p>
+                    <p class="dashboard__item__price">R$ 175,00</p>
+                    <a onclick="alterarStatus(3)" class="dashboard__item__button">Comprar</a>
+                </div>
+                </li>
+                <li class="dashboard__items__item" id="game-4">
+                    <div class="dashboard__item__img">
+                        <img src="img/GTA V.png" alt="Capa jogo GTA V">
+                    </div>
+                    <div class="dashboard__item__content">
+                    <p class="dashboard__item__name">Grand Theft Auto V</p>
+                    <p class="dashboard__item__price">R$ 99,99</p>
+                    <a onclick="alterarStatus(4)" class="dashboard__item__button">Comprar</a>
+                </div>
+                </li>
+                <li class="dashboard__items__item" id="game-5">
+                    <div class="dashboard__item__img">
+                        <img src="img/COD.png" alt="Capa jogo Call of Duty">
+                    </div>
+                    <div class="dashboard__item__content">
+                    <p class="dashboard__item__name">Call of Duty Black OPS 6</p>
+                    <p class="dashboard__item__price">R$ 299,99</p>
+                    <a onclick="alterarStatus(5)" class="dashboard__item__button">Comprar</a>
+                </div>
+                </li>
+                <li class="dashboard__items__item" id="game-6">
+                    <div class="dashboard__item__img">
+                        <img src="img/PUBG.png" alt="Capa jogo PUBG">
+                    </div>
+                    <div class="dashboard__item__content">
+                    <p class="dashboard__item__name">PUBG Battlegrounds</p>
+                    <p class="dashboard__item__price">R$ 50,00</p>
+                    <a onclick="alterarStatus(6)" class="dashboard__item__button">Comprar</a>
+                </div>
+                </li>
+            <li class="dashboard__items__item" id="game-7">
+                <div class="dashboard__item__img">
+                    <img src="img/Red Dead.png" alt="Capa jogo Read Dead Redemption">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">Red Dead Redemption</p>
+                <p class="dashboard__item__price">R$ 159,99</p>
+                <a onclick="alterarStatus(7)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-8">
+                <div class="dashboard__item__img">
+                    <img src="img/Spider.png" alt="Capa jogo Spider-Man">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">Spider-Man</p>
+                <p class="dashboard__item__price">R$ 179,99</p>
+                <a onclick="alterarStatus(8)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-9">
+                <div class="dashboard__item__img">
+                    <img src="img/Spider2.png" alt="Capa jogo Spider-Man 2">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">Spider-Man 2</p>
+                <p class="dashboard__item__price">R$ 259,00</p>
+                <a onclick="alterarStatus(9)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-10">
+                <div class="dashboard__item__img">
+                    <img src="img/gta vi.png" alt="Capa jogo GTA VI">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">GTA VI</p>
+                <p class="dashboard__item__price">R$ 599,99</p>
+                <a onclick="alterarStatus(10)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-11">
+                <div class="dashboard__item__img">
+                    <img src="img/witcher.png" alt="Capa jogo The Witcher 4">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">The Witcher 4</p>
+                <p class="dashboard__item__price">R$ 359,90</p>
+                <a onclick="alterarStatus(11)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-12">
+                <div class="dashboard__item__img">
+                    <img src="img/pes.png" alt="Capa jogo PES 2021">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">PES 2021</p>
+                <p class="dashboard__item__price">R$ 99,99</p>
+                <a onclick="alterarStatus(12)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-13">
+                <div class="dashboard__item__img">
+                    <img src="img/playstation.png" alt="Imagem PS5">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">Playstation 5 PRO</p>
+                <p class="dashboard__item__price">R$ 6.599,90</p>
+                <a onclick="alterarStatus(13)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-14">
+                <div class="dashboard__item__img">
+                    <img src="img/pc.png" alt="Computador Gamer">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">PC Gamer AD ASTRA | Rocketz  </p>
+                <p class="dashboard__item__price">R$ 20.391,00</p>
+                <a onclick="alterarStatus(14)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            <li class="dashboard__items__item" id="game-15">
+                <div class="dashboard__item__img">
+                    <img src="img/notebook.png" alt="Computador Gamer">
+                </div>
+                <div class="dashboard__item__content">
+                <p class="dashboard__item__name">Notebook Acer Nitro 5</p>
+                <p class="dashboard__item__price">R$ 5.599,99</p>
+                <a onclick="alterarStatus(15)" class="dashboard__item__button">Comprar</a>
+            </div>
+            </li>
+            </ul>
+        </section>
+        <img src="img/hachuras.svg" alt="Visual hachuras" class="hachuras">
+    </main>
+
+    <script src="js/apps.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Universe Games. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

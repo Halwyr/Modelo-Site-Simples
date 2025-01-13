@@ -1,0 +1,113 @@
+body {
+
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+
+    text-align: center;
+}
+
+h2 {
+
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+
+    background-color: #0056b3;
+}
+
+.modal {
+
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close {
+
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#message {
+
+    margin-top: 20px;
+    color: green;
+}
+
+.dashboard__logo {
+
+    height: 200px;
+
+}
