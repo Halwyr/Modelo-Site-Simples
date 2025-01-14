@@ -12,7 +12,7 @@ Este é um projeto de site de alugar e comprar jogos, desenvolvido na plataforma
 ## Melhorias Implementadas
 
 - Ampliação do site de um modelo básico de aluguel para um sistema completo que envolve a compra de jogos.
-- Implementação de páginas de login, cadastro e recuperação de senha, apesar de não estarem conectadas a um banco de dados.
+- Implementação de páginas de login, cadastro e recuperação de senha.
 - Implementação de Pop-up para exibir alertas na página.
 
 ## Tecnologias Utilizadas
@@ -20,3 +20,7 @@ Este é um projeto de site de alugar e comprar jogos, desenvolvido na plataforma
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+
+## Observação
+
+- **O modelo apresentado não tem vínculo em nenhum banco de dados. Seria necessário a implementação para funcionamento da janela de cadastro, loggin, etc...**
