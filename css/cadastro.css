@@ -1,4 +1,5 @@
 body {
+    
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #43cea2, #185a9d);
     display: flex;
@@ -9,6 +10,7 @@ body {
 }
 
 .container {
+
     background-color: rgba(27, 25, 25, 0.85);
     padding: 30px;
     border-radius: 15px;
@@ -19,6 +21,7 @@ body {
 }
 
 h1 {
+
     margin-bottom: 20px;
     color: #ffffff;
     text-align: center;
@@ -26,12 +29,14 @@ h1 {
 }
 
 form {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 label {
+
     width: 100%;
     width: 48%;
     margin-bottom: 8px;
@@ -40,6 +45,7 @@ label {
 }
 
 input {
+
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
@@ -50,12 +56,14 @@ input {
 }
 
 input:focus {
+
     border-color: #9542ee;
     box-shadow: 0 0 8px rgba(149, 66, 238, 0.5);
     outline: none;
 }
 
 button {
+
     width: 100%;
     width: 100%;
     padding: 15px;
@@ -69,11 +77,13 @@ button {
 }
 
 button:hover {
+
     background-color: #5f97f8;
     transform: scale(1.05);
 }
 
 .dashboard__logo {
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -111,53 +121,81 @@ button:hover {
     z-index: 999;
 }
 
-/* Responsividade para telas menores */
+
 @media screen and (max-width: 1080px) {
+
     .container {
         padding: 20px;
     }
 
     h1 {
-        font-size: 1.5em;
+
+        font-size: 1.8em;
     }
 
     label {
+
         width: 100%;
     }
 
     input {
-        width: 100%;
+
+        padding: 10px;
     }
 
     button {
+
+        padding: 12px;
         font-size: 16px;
     }
+
     .dashboard__logo {
 
-        height: 120px; 
-        margin-top: 30px;
-        max-width: 80%;
+        height: 120px;
     }
-}   
+
+    .popup {
+
+        width: 250px;
+        padding: 15px;
+    }
+}
 
 @media screen and (max-width: 780px) {
     .container {
+
         padding: 15px;
     }
 
     h1 {
-        font-size: 1.2em;
+
+        font-size: 1.5em;
+    }
+
+    label {
+
+        width: 100%;
+    }
+
+    input {
+
+        padding: 8px;
     }
 
     button {
+
+        padding: 10px;
         font-size: 14px;
-        padding: 12px;
     }
 
     .dashboard__logo {
 
         height: 100px;
-        margin-top: 20px;
-        max-width: 70%;
+    }
+
+    .popup {
+
+        width: 200px;
+        padding: 10px;
     }
 }
